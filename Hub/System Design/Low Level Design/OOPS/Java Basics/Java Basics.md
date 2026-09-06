@@ -257,7 +257,7 @@ e.g.
 
 
 
-Refer Multi-Dimensional Array-OOPS.
+Refer Multi-Dimensional Array.
 
 
 
@@ -345,7 +345,7 @@ e.g. https://kevinsguides.com/wp-content/uploads/2024/06/3d-array.svg
 
 
 
-Refer Jagged \& 3D Array-OOPS.
+Refer Jagged \& 3D Array.
 
 
 
@@ -385,7 +385,7 @@ While printing the array of objects, If you print the array without specifying i
 
 
 
-Refer Array of Objects- OOPS.
+Refer Array of Objects.
 
 
 
@@ -417,7 +417,7 @@ Versatility: It works with arrays, Array List, HashSet, and any object implement
 
 
 
-Refer Enhanced For Loop- OOPS.
+Refer Enhanced For Loop.
 
 
 
@@ -631,5 +631,5 @@ And the main method cannot call the static methods if it's not static, which mea
 
 
 
-Refer Static Methods- OOPS.
+Refer Static Methods.
 
