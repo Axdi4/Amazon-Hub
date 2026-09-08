@@ -80,7 +80,7 @@ Def- Getter and setter methods are used to get and set values to or from local p
 
 
 
-Getters and setters are methods in Java used to access and modify private class variables, implementing the encapsulation principle of Object-Oriented Programming.  A getter (accessor) retrieves the value of a private field, typically named getFieldName(), while a setter (mutator) updates it, named setFieldName(). 
+Getters and setters are methods in Java used to access and modify private class variables, implementing the encapsulation principle of Object-Oriented Programming.  A getter (accessor) retrieves the value of a private field, typically named getFieldName(), while a setter (mutator) updates it, named setFieldName().
 
 
 
@@ -97,6 +97,82 @@ The method name can be anything it doesn't have to be set() or get(). But the me
 
 
 And you don't have to write the setter and getter code for methods, In current java compilers, we have generation inbuilt codes; which contains getter and setter methods(can be generated instead of writing), by mentioning the variables which you have to get and set.
+
+
+
+Refer Getter \& Setter- OOPS.
+
+
+
+###### **.this Keyword:**
+
+
+
+Def- The this keyword in Java is a reference variable that refers to the current object (instance) of the class in which it is used.  It is automatically available in all non-static methods and constructors, allowing the object to refer to itself. 
+
+
+
+Primary uses of the this keyword include:
+
+
+
+Resolving Ambiguity: It distinguishes between instance variables and method parameters or local variables that share the same name (e.g., this.name = name;). 
+
+
+
+Constructor Chaining: It invokes another constructor within the same class using this(arguments), which must be the first statement in the constructor. 
+
+
+
+Invoking Methods: It explicitly calls methods of the current class (e.g., this.methodName()), though this is often optional as the compiler adds it implicitly. 
+
+
+
+Passing Current Object: It passes the current instance as an argument to other methods or constructors (e.g., someMethod(this)). 
+
+
+
+Returning Current Object: It allows a method to return the current class instance, enabling method chaining. 
+
+
+
+Important Constraints:
+
+
+
+this cannot be used in static methods or static blocks because static contexts belong to the class, not to a specific instance. 
+
+
+
+In inner classes, this refers to the inner class instance; to refer to the outer class instance, use OuterClassName.this. 
+
+
+
+
+
+Refer .this Keyword- OOPS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
