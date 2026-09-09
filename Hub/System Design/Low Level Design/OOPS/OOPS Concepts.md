@@ -158,7 +158,7 @@ Refer .this Keyword- OOPS.
 
 
 
-Def- In Java, a constructor is a special block of code used to initialize objects when they are created.  It shares the same name as the class, has no return type (not even void), and is automatically invoked when the new keyword is used to instantiate a class. 
+Def- In Java, a constructor is a special block of code used to initialize objects when they are created.  It shares the same name as the class, has no return type (not even void), and is automatically invoked when the new keyword is used to instantiate a class.
 
 
 
@@ -166,7 +166,7 @@ Whenever the object get created, the parameters should be created/initialized wi
 
 
 
-It is used to assign/initialize default values to the object. for e.g. if you want to set limit to the system (set an age limit). 
+It is used to assign/initialize default values to the object. for e.g. if you want to set limit to the system (set an age limit).
 
 
 
@@ -182,15 +182,15 @@ Key Characteristics and Types:
 
 
 
-Automatic Invocation: If no constructor is explicitly defined, the Java compiler provides a default constructor that initializes variables to their default values (e.g., 0 for integers, null for objects). 
+Automatic Invocation: If no constructor is explicitly defined, the Java compiler provides a default constructor that initializes variables to their default values (e.g., 0 for integers, null for objects).
 
 
 
-Parameterized Constructors: These accept arguments to allow for custom initialization of object attributes during creation. 
+Parameterized Constructors: These accept arguments to allow for custom initialization of object attributes during creation.
 
 
 
-Constructor Overloading: Java supports multiple constructors with different parameter lists, enabling flexible object initialization. 
+Constructor Overloading: Java supports multiple constructors with different parameter lists, enabling flexible object initialization.
 
 
 
@@ -200,19 +200,39 @@ Copy Constructors: Unlike C++, Java does not have a built-in copy constructor; h
 
 
 
+Default vs Parameterized Constructor:
 
 
 
+Def- Default constructors have no parameters and initialize objects with default values (e.g., 0, null or default value given by the user e.g. Aadi, 21), while parameterized constructors accept arguments to initialize objects with specific, user-defined values. 
 
 
 
+The primary distinctions include:
 
 
 
+Parameter Count: Default constructors take zero arguments; parameterized constructors take one or more. 
 
 
 
+Origin: The compiler automatically provides a default constructor only if no other constructors are defined; parameterized constructors must be explicitly written by the programmer. 
 
+
+
+Initialization: Default constructors assign default values to instance variables, whereas parameterized constructors allow custom initialization and validation of input data. 
+
+
+
+Compiler Behavior: Defining a parameterized constructor prevents the compiler from generating a default constructor; if no-argument creation is needed alongside parameters, a no-argument constructor must be explicitly declared.
+
+
+
+And you don't have to write the constructor code, In current java compilers, we have generation inbuilt codes; which contains default and parameterized constructors(can be generated instead of writing), by mentioning the variables which you have to create constructor it will create parameterized constructor. Without mentioning the variables it will create default constructor.
+
+
+
+Refer default vs Parameterized Constructors.
 
 
 
