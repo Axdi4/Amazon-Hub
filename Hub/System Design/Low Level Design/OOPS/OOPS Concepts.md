@@ -108,7 +108,7 @@ Refer Getter \& Setter- OOPS.
 
 
 
-Def- The this keyword in Java is a reference variable that refers to the current object (instance) of the class in which it is used.  It is automatically available in all non-static methods and constructors, allowing the object to refer to itself. 
+Def- The this keyword in Java is a reference variable that refers to the current object (instance) of the class in which it is used.  It is automatically available in all non-static methods and constructors, allowing the object to refer to itself.
 
 
 
@@ -116,23 +116,23 @@ Primary uses of the this keyword include:
 
 
 
-Resolving Ambiguity: It distinguishes between instance variables and method parameters or local variables that share the same name (e.g., this.name = name;). 
+Resolving Ambiguity: It distinguishes between instance variables and method parameters or local variables that share the same name (e.g., this.name = name;).
 
 
 
-Constructor Chaining: It invokes another constructor within the same class using this(arguments), which must be the first statement in the constructor. 
+Constructor Chaining: It invokes another constructor within the same class using this(arguments), which must be the first statement in the constructor.
 
 
 
-Invoking Methods: It explicitly calls methods of the current class (e.g., this.methodName()), though this is often optional as the compiler adds it implicitly. 
+Invoking Methods: It explicitly calls methods of the current class (e.g., this.methodName()), though this is often optional as the compiler adds it implicitly.
 
 
 
-Passing Current Object: It passes the current instance as an argument to other methods or constructors (e.g., someMethod(this)). 
+Passing Current Object: It passes the current instance as an argument to other methods or constructors (e.g., someMethod(this)).
 
 
 
-Returning Current Object: It allows a method to return the current class instance, enabling method chaining. 
+Returning Current Object: It allows a method to return the current class instance, enabling method chaining.
 
 
 
@@ -140,17 +140,65 @@ Important Constraints:
 
 
 
-this cannot be used in static methods or static blocks because static contexts belong to the class, not to a specific instance. 
+this cannot be used in static methods or static blocks because static contexts belong to the class, not to a specific instance.
 
 
 
-In inner classes, this refers to the inner class instance; to refer to the outer class instance, use OuterClassName.this. 
+In inner classes, this refers to the inner class instance; to refer to the outer class instance, use OuterClassName.this.
 
 
 
 
 
 Refer .this Keyword- OOPS.
+
+
+
+###### **Constructor:**
+
+
+
+Def- In Java, a constructor is a special block of code used to initialize objects when they are created.  It shares the same name as the class, has no return type (not even void), and is automatically invoked when the new keyword is used to instantiate a class. 
+
+
+
+Whenever the object get created, the parameters should be created/initialized with it, instead of producing default null values, you can set up default values for the parameters, To achieve this Constructors are used.
+
+
+
+It is used to assign/initialize default values to the object. for e.g. if you want to set limit to the system (set an age limit). 
+
+
+
+A constructor looks like a method, the only change you don't specify the return type. And there is a compulsion that the constructor name should be the same as the class name.
+
+
+
+So, the constructor don't have to be called, every time you initialize the object the constructor gets created. So every object get created, a new constructor gets created.
+
+
+
+Key Characteristics and Types:
+
+
+
+Automatic Invocation: If no constructor is explicitly defined, the Java compiler provides a default constructor that initializes variables to their default values (e.g., 0 for integers, null for objects). 
+
+
+
+Parameterized Constructors: These accept arguments to allow for custom initialization of object attributes during creation. 
+
+
+
+Constructor Overloading: Java supports multiple constructors with different parameter lists, enabling flexible object initialization. 
+
+
+
+Copy Constructors: Unlike C++, Java does not have a built-in copy constructor; however, developers can manually implement one by creating a constructor that accepts an instance of the same class to copy its values.
+
+
+
+
 
 
 
