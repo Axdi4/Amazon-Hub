@@ -200,11 +200,11 @@ Copy Constructors: Unlike C++, Java does not have a built-in copy constructor; h
 
 
 
-Default vs Parameterized Constructor:
+**Default vs Parameterized Constructor:**
 
 
 
-Def- Default constructors have no parameters and initialize objects with default values (e.g., 0, null or default value given by the user e.g. Aadi, 21), while parameterized constructors accept arguments to initialize objects with specific, user-defined values. 
+Def- Default constructors have no parameters and initialize objects with default values (e.g., 0, null or default value given by the user e.g. Aadi, 21), while parameterized constructors accept arguments to initialize objects with specific, user-defined values.
 
 
 
@@ -212,15 +212,15 @@ The primary distinctions include:
 
 
 
-Parameter Count: Default constructors take zero arguments; parameterized constructors take one or more. 
+Parameter Count: Default constructors take zero arguments; parameterized constructors take one or more.
 
 
 
-Origin: The compiler automatically provides a default constructor only if no other constructors are defined; parameterized constructors must be explicitly written by the programmer. 
+Origin: The compiler automatically provides a default constructor only if no other constructors are defined; parameterized constructors must be explicitly written by the programmer.
 
 
 
-Initialization: Default constructors assign default values to instance variables, whereas parameterized constructors allow custom initialization and validation of input data. 
+Initialization: Default constructors assign default values to instance variables, whereas parameterized constructors allow custom initialization and validation of input data.
 
 
 
@@ -233,6 +233,32 @@ And you don't have to write the constructor code, In current java compilers, we 
 
 
 Refer default vs Parameterized Constructors.
+
+
+
+
+
+###### **Naming Convention:**
+
+
+
+Def- Java follows a naming convention called Camel casing. Naming Conventions are used to understand the code visually, so that you can identify what is what. 
+
+
+
+i.e. You should always define classes and Interfaces starting with Capital letter (e.g. Calculator), you should define the variables and methods starting with small letter. (e.g. marks, age, add()), you should define constants with all capitals (e.g. BRAND, NAME).
+
+
+
+If you multiple words, you can combine words by making it capital.(e.g. methods-showMyMarks(), classes-MyData).
+
+
+
+
+
+
+
+
 
 
 
