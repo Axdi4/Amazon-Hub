@@ -643,4 +643,34 @@ i.e. You should always define classes and Interfaces starting with Capital lette
 If you multiple words, you can combine words by making it capital.(e.g. methods-showMyMarks(), classes-MyData).
 
 
+###### **Anonymous Object:**
+
+Def- An anonymous object in Java is an object instance created without assigning it to a reference variable, meaning it has no name and cannot be reused after its initial creation.  These objects are typically used for one-time operations, such as calling a method or passing an argument, which helps reduce code verbosity and allows the object to become eligible for garbage collection immediately after use. 
+
+The syntax for creating an anonymous object involves using the new keyword followed by the constructor, immediately accessed via the dot operator for methods or fields. For example, new Student().display(); creates a Student object, calls its display() method, and then discards the reference, whereas a named object requires a variable assignment like Student s = new Student(); s.display();. 
+
+Scope: Limited strictly to the statement in which it is created; it cannot be accessed again in subsequent lines. 
+Memory Efficiency: Since no reference variable holds the object, it is eligible for garbage collection as soon as the expression is evaluated, preventing unnecessary memory retention. 
+Use Cases: Ideal for simple, immediate tasks like passing a temporary object to a method (e.g., new Scanner(System.in).nextLine()) or performing a single action without the need for future interaction with that specific instance.
+
+The drawback with anonymous object it can't be called again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

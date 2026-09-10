@@ -234,7 +234,3 @@ And you don't have to write the constructor code, In current java compilers, we 
 
 Refer default vs Parameterized Constructors.
 
-
-
-
-
