@@ -633,3 +633,14 @@ And the main method cannot call the static methods if it's not static, which mea
 
 Refer Static Methods.
 
+
+###### **Naming Convention:**
+
+Def- Java follows a naming convention called Camel casing. Naming Conventions are used to understand the code visually, so that you can identify what is what.
+
+i.e. You should always define classes and Interfaces starting with Capital letter (e.g. Calculator), you should define the variables and methods starting with small letter. (e.g. marks, age, add()), you should define constants with all capitals (e.g. BRAND, NAME).
+
+If you multiple words, you can combine words by making it capital.(e.g. methods-showMyMarks(), classes-MyData).
+
+
+
