@@ -234,3 +234,43 @@ And you don't have to write the constructor code, In current java compilers, we 
 
 Refer default vs Parameterized Constructors.
 
+
+
+
+
+
+
+##### **Inheritance:**
+
+
+
+
+
+###### **Need of Inheritance:**
+
+
+
+Inheritance in Java is primarily used to establish an IS-A relationship between classes, allowing a subclass to inherit properties and behaviors from a superclass.  Its main purposes include:
+
+
+
+Code Reusability: Developers can reuse existing code by creating new classes based on existing ones, reducing redundancy and improving development efficiency. 
+
+
+
+Extensibility: It allows extending the functionality of a base class by adding new methods or fields in the derived class without modifying the original code. 
+
+
+
+Method Overriding: Inheritance is essential for achieving runtime polymorphism through method overriding, where a subclass provides a specific implementation of a method defined in its parent. 
+
+
+
+Logical Organization: It helps structure code hierarchically, making applications more modular, maintainable, and easier to understand by grouping related classes. 
+
+While Java does not support multiple inheritance with classes to avoid complexity (like the diamond problem), it supports multiple inheritance via interfaces, enabling classes to inherit type definitions from multiple sources. 
+
+
+
+
+
