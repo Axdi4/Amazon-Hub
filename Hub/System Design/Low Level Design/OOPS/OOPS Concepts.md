@@ -244,6 +244,72 @@ Refer default vs Parameterized Constructors.
 
 
 
+Def- Inheritance in Java is an Object-Oriented Programming (OOP) mechanism where a class (the subclass or child) acquires the fields and methods of another class (the superclass or parent), establishing an IS-A relationship.  This process is implemented using the extends keyword and is primarily used to promote code reusability and logical hierarchical organization. 
+
+
+
+When a subclass extends a superclass, it inherits all public and protected members, as well as default members if both classes are in the same package; private members remain encapsulated and are not inherited.  The mechanism supports method overriding for runtime polymorphism and utilizes the super keyword to access parent class constructors and methods. 
+
+
+
+In Java, inheritance is implemented using the extends keyword, which allows a subclass (child class) to inherit fields and methods from a superclass (parent class).  This establishes an IS-A relationship and promotes code reusability. 
+
+
+
+The basic syntax is:
+
+
+
+class Superclass {
+
+&#x20;   // fields and methods
+
+}
+
+
+
+class Subclass extends Superclass {
+
+&#x20;   // additional fields and methods
+
+}
+
+
+
+To explicitly call a superclass constructor from the subclass, use the super keyword as the first statement in the subclass constructor:
+
+
+
+class Subclass extends Superclass {
+
+&#x20;   Subclass() {
+
+&#x20;       super(arguments); // Calls superclass constructor
+
+&#x20;   }
+
+}
+
+
+
+Java supports several types of inheritance:
+
+
+
+Single Inheritance: One subclass inherits from one superclass. 
+
+
+
+Multilevel Inheritance: A chain of inheritance (e.g., A → B → C). 
+
+
+
+Hierarchical Inheritance: Multiple subclasses inherit from a single superclass. 
+
+
+
+Multiple/Hybrid Inheritance: Java does not support multiple inheritance through classes to avoid the "diamond problem"; instead, it is achieved via interfaces**.**
+
 
 
 ###### **Need of Inheritance:**
@@ -254,23 +320,19 @@ Inheritance in Java is primarily used to establish an IS-A relationship between 
 
 
 
-Code Reusability: Developers can reuse existing code by creating new classes based on existing ones, reducing redundancy and improving development efficiency. 
+Code Reusability: Developers can reuse existing code by creating new classes based on existing ones, reducing redundancy and improving development efficiency.
 
 
 
-Extensibility: It allows extending the functionality of a base class by adding new methods or fields in the derived class without modifying the original code. 
+Extensibility: It allows extending the functionality of a base class by adding new methods or fields in the derived class without modifying the original code.
 
 
 
-Method Overriding: Inheritance is essential for achieving runtime polymorphism through method overriding, where a subclass provides a specific implementation of a method defined in its parent. 
+Method Overriding: Inheritance is essential for achieving runtime polymorphism through method overriding, where a subclass provides a specific implementation of a method defined in its parent.
 
 
 
-Logical Organization: It helps structure code hierarchically, making applications more modular, maintainable, and easier to understand by grouping related classes. 
+Logical Organization: It helps structure code hierarchically, making applications more modular, maintainable, and easier to understand by grouping related classes.
 
-While Java does not support multiple inheritance with classes to avoid complexity (like the diamond problem), it supports multiple inheritance via interfaces, enabling classes to inherit type definitions from multiple sources. 
-
-
-
-
+While Java does not support multiple inheritance with classes to avoid complexity (like the diamond problem), it supports multiple inheritance via interfaces, enabling classes to inherit type definitions from multiple sources.
 
