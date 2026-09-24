@@ -366,7 +366,7 @@ Refer OOPS- Multiple Inheritance.
 
 
 
-Def- In Java, super is a reserved keyword used to refer to the immediate parent class object.  It is primarily used in three contexts: accessing hidden fields, invoking overridden methods, and calling parent constructors. 
+Def- In Java, super is a reserved keyword used to refer to the immediate parent class object.  It is primarily used in three contexts: accessing hidden fields, invoking overridden methods, and calling parent constructors.
 
 
 
@@ -374,7 +374,7 @@ Accessing Fields: Use super.fieldName to access a variable in the parent class w
 
 
 
-Invoking Methods: Use super.methodName() to call the parent class's implementation of a method that has been overridden in the subclass. 
+Invoking Methods: Use super.methodName() to call the parent class's implementation of a method that has been overridden in the subclass.
 
 
 
@@ -394,11 +394,11 @@ this() will execute the constructor of the same class.
 
 
 
-First Statement Rule: Both this() and super() must be the first statement inside a constructor. 
+First Statement Rule: Both this() and super() must be the first statement inside a constructor.
 
 
 
-Mutual Exclusivity: You cannot use both this() and super() in the same constructor because only one can be the first statement. 
+Mutual Exclusivity: You cannot use both this() and super() in the same constructor because only one can be the first statement.
 
 
 
@@ -410,11 +410,51 @@ Automatic Call: If a constructor does not explicitly call this() or super(), Jav
 
 |Features|this|super|
 |-|-|-|
-|Reference |Current class instance|Parent class instance|
+|Reference|Current class instance|Parent class instance|
 |Variable Access|Current class fields|Parent class fields (if hidden)|
 |Method Invocation|Current class methods|Parent class methods (if overridden)|
 |Location|Can be used anywhere in instance context|Can be used anywhere in instance context|
 |Constructor Restriction|Must be first statement; cannot coexist with super()|Must be first statement; cannot coexist with this()|
+
+
+
+
+
+
+
+###### **Method Overriding:**
+
+
+
+Def- Method overriding in Java allows a subclass to provide a specific implementation of a method already defined in its superclass, enabling runtime polymorphism where the method to execute is determined by the object's actual type at runtime.  To override a method, the subclass method must have the same name, same parameters, and same or covariant return type as the superclass method, while the access modifier cannot be more restrictive than the original. 
+
+
+
+This mechanism allows developers to customize inherited behavior, such as providing specific implementations for general methods defined in base classes or abstract classes, facilitating flexible and extensible object-oriented design.
+
+
+
+Refer Method Overriding -OOPS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
