@@ -352,11 +352,69 @@ This is called Ambiguity. where the class object can't decide which parent class
 
 
 
+It is solved using interfaces.
+
+
+
 Refer OOPS- Multiple Inheritance.
 
 
 
 
+
+###### **This and Super Method:**
+
+
+
+Def- In Java, super is a reserved keyword used to refer to the immediate parent class object.  It is primarily used in three contexts: accessing hidden fields, invoking overridden methods, and calling parent constructors. 
+
+
+
+Accessing Fields: Use super.fieldName to access a variable in the parent class when the child class has a variable with the same name.
+
+
+
+Invoking Methods: Use super.methodName() to call the parent class's implementation of a method that has been overridden in the subclass. 
+
+
+
+Calling Constructors: Use super() or super(args) as the first statement in a subclass constructor to explicitly invoke the parent class's constructor.
+
+&#x20;
+
+The keyword cannot be used in static contexts because it refers to an instance object. Note that super only refers to the direct parent; you cannot use super.super to access the grandparent class.
+
+
+
+You have default super methods in parent class as well because, every class in java is extends to the Object class.
+
+
+
+this() will execute the constructor of the same class.
+
+
+
+First Statement Rule: Both this() and super() must be the first statement inside a constructor. 
+
+
+
+Mutual Exclusivity: You cannot use both this() and super() in the same constructor because only one can be the first statement. 
+
+
+
+Automatic Call: If a constructor does not explicitly call this() or super(), Java automatically inserts super() to call the parent class's no-argument constructor.
+
+
+
+
+
+|Features|this|super|
+|-|-|-|
+|Reference |Current class instance|Parent class instance|
+|Variable Access|Current class fields|Parent class fields (if hidden)|
+|Method Invocation|Current class methods|Parent class methods (if overridden)|
+|Location|Can be used anywhere in instance context|Can be used anywhere in instance context|
+|Constructor Restriction|Must be first statement; cannot coexist with super()|Must be first statement; cannot coexist with this()|
 
 
 
