@@ -244,15 +244,15 @@ Refer default vs Parameterized Constructors.
 
 
 
-Def- Inheritance in Java is an Object-Oriented Programming (OOP) mechanism where a class (the subclass or child) acquires the fields and methods of another class (the superclass or parent), establishing an IS-A relationship.  This process is implemented using the extends keyword and is primarily used to promote code reusability and logical hierarchical organization. 
+Def- Inheritance in Java is an Object-Oriented Programming (OOP) mechanism where a class (the subclass or child) acquires the fields and methods of another class (the superclass or parent), establishing an IS-A relationship.  This process is implemented using the extends keyword and is primarily used to promote code reusability and logical hierarchical organization.
 
 
 
-When a subclass extends a superclass, it inherits all public and protected members, as well as default members if both classes are in the same package; private members remain encapsulated and are not inherited.  The mechanism supports method overriding for runtime polymorphism and utilizes the super keyword to access parent class constructors and methods. 
+When a subclass extends a superclass, it inherits all public and protected members, as well as default members if both classes are in the same package; private members remain encapsulated and are not inherited.  The mechanism supports method overriding for runtime polymorphism and utilizes the super keyword to access parent class constructors and methods.
 
 
 
-In Java, inheritance is implemented using the extends keyword, which allows a subclass (child class) to inherit fields and methods from a superclass (parent class).  This establishes an IS-A relationship and promotes code reusability. 
+In Java, inheritance is implemented using the extends keyword, which allows a subclass (child class) to inherit fields and methods from a superclass (parent class).  This establishes an IS-A relationship and promotes code reusability.
 
 
 
@@ -296,19 +296,19 @@ Java supports several types of inheritance:
 
 
 
-Single Inheritance: One subclass inherits from one superclass. 
+Single Inheritance: One subclass inherits from one superclass.
 
 
 
-Multilevel Inheritance: A chain of inheritance (e.g., A → B → C). 
+Multilevel Inheritance: A chain of inheritance (e.g., A → B → C).
 
 
 
-Hierarchical Inheritance: Multiple subclasses inherit from a single superclass. 
+Hierarchical Inheritance: Multiple subclasses inherit from a single superclass.
 
 
 
-Multiple/Hybrid Inheritance: Java does not support multiple inheritance through classes to avoid the "diamond problem"; instead, it is achieved via interfaces**.**
+Multiple/Hybrid Inheritance: Java does not support multiple inheritance through classes to avoid the "diamond problem"; instead, it is achieved via interfaces\*\*.\*\*
 
 
 
@@ -335,4 +335,48 @@ Method Overriding: Inheritance is essential for achieving runtime polymorphism t
 Logical Organization: It helps structure code hierarchically, making applications more modular, maintainable, and easier to understand by grouping related classes.
 
 While Java does not support multiple inheritance with classes to avoid complexity (like the diamond problem), it supports multiple inheritance via interfaces, enabling classes to inherit type definitions from multiple sources.
+
+
+
+
+
+###### **Multiple Inheritance:**
+
+
+
+Def- Java does not support multiple inheritance with classes to avoid ambiguity issues, specifically the Diamond Problem, where a subclass inherits conflicting method implementations from two parent classes.  For example, if Class C extends Class A, Class B and both A and B define a show() method, the compiler cannot determine which version to use.
+
+
+
+This is called Ambiguity. where the class object can't decide which parent class to choose from.
+
+
+
+Refer OOPS- Multiple Inheritance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
